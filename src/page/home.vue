@@ -2,12 +2,15 @@
 <div>
     <head-top></head-top>
     <swiper></swiper>
-
+    <contentBox class="mt"></contentBox>
+    <contentBox class="mt"></contentBox>
+    <contentBox class="mt"></contentBox>
 </div>
 </template>
 <script>
     import headTop from "../components/headTop.vue"
     import swiper from "../components/swiper.vue"
+    import contentBox from "../components/content-box.vue"
     export default {
         data(){
             return {
@@ -24,7 +27,7 @@
             }
         },
         components: {
-            headTop,swiper
+            headTop,swiper,contentBox
         },
         mounted(){
         },

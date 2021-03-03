@@ -13,4 +13,5 @@ export default {
 
 <style type="less">
   @import "style/common.less";
+
 </style>

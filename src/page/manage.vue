@@ -1,6 +1,6 @@
 <template>
     <div id="app" class="fillcontain">
-        <router-view style="height:100%" class="bg"></router-view>
+        <router-view style="height:100%"></router-view>
     </div>
 </template>
 
@@ -16,7 +16,7 @@
 
 <style lang="less">
     @import '../style/mixin';
-    .bg{
-        background-color: @bg;
+    body{
+        background: @bg;
     }
 </style>
