@@ -3,6 +3,20 @@
         <div :class="['bassTab',{'showTab':nowTab>= 0}]"></div>
         <ul class="menu-box">
             <li v-for="(item,index) in menu" :key="item.key" :class="['text-base',{'t-white':nowshen && nowTab<0}]" @mouseenter="changeTab(index)">{{item.name}}</li>
+            <li>
+                <el-dropdown>
+                      <span class="el-dropdown-link">
+                        <i :class="['el-icon-arrow-down','el-icon-goods','caidan',{'t-white':nowshen && nowTab<0}]"></i>
+                      </span>
+                    <el-dropdown-menu slot="dropdown">
+                        <el-dropdown-item>黄金糕</el-dropdown-item>
+                        <el-dropdown-item>狮子头</el-dropdown-item>
+                        <el-dropdown-item>螺蛳粉</el-dropdown-item>
+                        <el-dropdown-item disabled>双皮奶</el-dropdown-item>
+                        <el-dropdown-item divided>蚵仔煎</el-dropdown-item>
+                    </el-dropdown-menu>
+                </el-dropdown>
+            </li>
         </ul>
         <ul  class="menu-content" v-show="nowTab>= 0">
             <li @mouseleave="overTab()" >
